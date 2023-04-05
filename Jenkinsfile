@@ -1,11 +1,12 @@
 pipeline {  
     agent any  
         stages {  
-       	    stage("git_checkout") {  
-           	    steps {  
-              	    echo "cloning repository" 
-              	    echo "repo cloned successfully"  
-              	    }  
-         	    } 
+       	   //Code starts for stage Clean
+        stage('Clean') {
+            steps {
+                sh 'mvn clean'
+            }
+        }
+		//Code ends for stage Clean
         }
 }

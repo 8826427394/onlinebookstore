@@ -18,6 +18,8 @@ public class Address implements Serializable {
 
     public void setAddressLine1(String addressLine1) {
         this.addressLine1 = addressLine1;
+        this.addressLine1 = addressLine1;
+    
     }
 
     public String getAddressLine2() {

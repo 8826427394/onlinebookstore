@@ -1,7 +1,7 @@
 pipeline {  
     agent any  
         stages {  
-       	   //Code starts for stage Clean 
+       	   //Code starts for stage Cleaning
         stage('Clean') {
             steps {
                 sh 'mvn clean'

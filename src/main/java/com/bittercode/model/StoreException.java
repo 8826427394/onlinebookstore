@@ -6,9 +6,9 @@ import com.bittercode.constant.ResponseCode;
 
 public class StoreException extends IOException {
 
-    final String errorCode;
-    final String errorMessage;
-    final int statusCode;
+    private String errorCode;
+    private String errorMessage;
+    private int statusCode;
 
     public StoreException(String errorMessage) {
         super(errorMessage);
